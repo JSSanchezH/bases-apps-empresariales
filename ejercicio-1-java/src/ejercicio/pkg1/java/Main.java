@@ -66,11 +66,8 @@ public class Main {
         System.out.print("Ingrese un numero: ");
         int numero = scanner.nextInt();
 
-        if (esPrimo(numero)) {
-            System.out.println(numero + " es un numero primo.\n");
-        } else {
-            System.out.println(numero + " no es un numero primo.\n");
-        }
+        System.out.println(numero + (esPrimo(numero) ? " es un número primo." : " no es un número primo."));
+
 //        scanner.close();
         /* -------- Min Max -------- */
         List<Integer> numeros = Arrays.asList(3, 8, 1, 15, -4, 7, 10);
@@ -85,7 +82,7 @@ public class Main {
         scanner.nextLine();
         String palabra = scanner.nextLine();
 
-        System.out.println("La palabra '" + palabra + "' " + (esPalindromo(palabra) ? "es" : "no es") + " un palíndromo.");
+        System.out.println("La palabra '" + palabra + "' " + (esPalindromo(palabra) ? "es" : "no es") + " un palindromo.");
         scanner.close();
     }
     
