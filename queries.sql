@@ -10,11 +10,11 @@ CREATE TABLE clientes (
 
 -- insert
 INSERT INTO clientes (nombre, email, telefono) VALUES
-('Juan Pérez', 'juan.perez@email.com', '123456789'),
-('María Gómez', 'maria.gomez@email.com', '987654321'),
-('Carlos Ramírez', 'carlos.ramirez@email.com', '555666777'),
+('Juanita Pérez', 'juanita.perez@email.com', '123456789'),
+('Mariana osorio', 'mariana.osorio@email.com', '987654321'),
+('Nicolas Duran', 'nicolas.duran@email.com', '555666777'),
 ('Ana Torres', 'ana.torres@email.com', '111222333'),
-('Pedro López', 'pedro.lopez@email.com', '999888777');
+('Sebatian Sanchez', 'sebastian.sanchez@email.com', '999888777');
 
 
 
