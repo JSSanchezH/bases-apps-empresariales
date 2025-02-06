@@ -8,6 +8,9 @@ import modelo.Carro;
 import modelo.Empleado;
 import modelo.Empresa;
 import modelo.Moto;
+import modelo.Pagable;
+import modelo.TarjetaCredito;
+import modelo.TransferenciaBancaria;
 import modelo.Vehiculo;
 
 /**
@@ -21,6 +24,8 @@ public class Ejercicio2Java {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        System.out.println("------------------ Ejercicio 1 ------------------");
 
         Empleado empleado1 = new Empleado("Miguel Angel", 500000, "Gerente");
         Empleado empleado2 = new Empleado("Sebastian Sanchez", 400000, "Gerente");
@@ -37,6 +42,7 @@ public class Ejercicio2Java {
             System.out.println("Error: " + e.getMessage());  
         }
         
+        System.out.println("\n\n------------------ Ejercicio 2 ------------------");
         
         Vehiculo miCarro = new Carro("Toyota",0);
         Vehiculo miMoto = new Moto("Yamaha",0);
@@ -46,6 +52,14 @@ public class Ejercicio2Java {
 
         miCarro.mostrarVelocidad();
         miMoto.mostrarVelocidad();
+        
+        System.out.println("\n\n------------------ Ejercicio 3 ------------------");
+        
+        Pagable pagoConTarjeta = new TarjetaCredito("1234567812345678");
+        Pagable pagoConTransferencia = new TransferenciaBancaria("987654321");
+
+        pagoConTarjeta.procesarPago(150.75);
+        pagoConTransferencia.procesarPago(300.50);
 
     }
 
